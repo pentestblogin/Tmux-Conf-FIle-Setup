@@ -31,6 +31,8 @@ bind -n S-Down select-pane -D
 #setw -g monitor-activity on
 #set -g visual-activity on
 
+
+
 #copy limit
 set -g history-limit 100000
 
@@ -50,3 +52,8 @@ bind -n C-[ copy-mode
 bind -n C-M-v split-window -v
 bind -n C-M-g split-window -h
 bind -n C-M-x kill-pane 
+
+#set color
+
+#set -g status-bg dark-black
+#set -g status-fg white 
