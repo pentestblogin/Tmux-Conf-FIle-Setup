@@ -27,9 +27,9 @@ bind -n S-Down select-pane -D
 
 
 #set -g mouse on 
-#setw -g mode-keys vi
-#setw -g monitor-activity on
-#set -g visual-activity on
+#setw -g  mode-keys vi
+setw -g monitor-activity on
+set -g visual-activity on
 
 
 
@@ -45,6 +45,7 @@ bind -n C-M-z resize-pane -Z
 # C-[ quickly copy mode
 unbind C-[
 bind -n C-[ copy-mode
+bind -n C-M-] paste-buffer
 
 
 #split tmux terminal
@@ -94,3 +95,6 @@ set -g message-style 'fg=colour200 bg=colour20 bold'
 unbind C-M-c
 bind -n C-M-c clock
 
+
+
+set -sg escape-time 0
